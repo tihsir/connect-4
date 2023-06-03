@@ -6,9 +6,7 @@
 #include <sstream>
 #include <string>
 
-/**************************************************************************/
-/* your function definitions                                              */
-/**************************************************************************/
+
 
 void InitBoard(Board& b) {
   // below was minimal to get tests to actually compile and given test case to
@@ -103,9 +101,6 @@ bool BoardLocationInBounds(int row, int col) {
   return checker;
 }
 
-/**************************************************************************/
-/* provided to you                                                        */
-/**************************************************************************/
 std::string BoardToStr(const Board& b) {
   constexpr int kTotalWidth = Board::kBoardWidth * 11 - Board::kBoardHeight - 1;
   std::stringstream ss;
